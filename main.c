@@ -10,12 +10,12 @@ int main() {
     float temp;
 
     while (1) {
-        printf("\n=== Temperature Converter by Austin!");
+        printf("\n=== Temperature Converter by Austin!\n");
         printf("1. Celsius --> Fahrenheit\n");
         printf("2. Celsius --> Kelvin\n");
         printf("3. Fahrenheit --> Celsius\n ");
-        printf("4. Kelvin --> Celsius ");
-        printf("5.Exit\n");
+        printf("4. Kelvin --> Celsius\n ");
+        printf("5. Exit\n");
 
         // read menu
         scanf("%d", &choice);
