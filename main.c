@@ -2,8 +2,8 @@
 
 void celsius_to_fahrenheit(float c);
 void celsius_to_kelvin(float c);
-void fahrenheit_to_celsius(float c);
-void kelvin_to_celsius(float c);
+void fahrenheit_to_celsius(float f);
+void kelvin_to_celsius(float k);
 
 int main() {
     int choice;
@@ -52,4 +52,18 @@ void celsius_to_fahrenheit(float c) {
 void celsius_to_kelvin(float c) {
     float k = c + 273.15;
     printf("Kelvin: ",k,c);
+}
+
+void fahrenheit_to_celsius(float f) {
+    float c = (f - 32) * 5.0 / 9.0;
+    printf("Celsius:", f,c);
+}
+
+void kelvin_to_celsius(float k) {
+    if (k < 0) {
+        printf("Error:Kelvin cannot be negative!\n");
+        return;
+    }
+    float c = k - 273.15;
+    printf("k,c");
 }
