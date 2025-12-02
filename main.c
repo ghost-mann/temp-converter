@@ -46,17 +46,17 @@ int main() {
 
 void celsius_to_fahrenheit(float c) {
     float f = c * 9.0 / 5.0 + 32;
-    printf("Fahrenheit: ", c,f);
+    printf("%.2f °C = %.2f °F\n", c,f);
 }
 
 void celsius_to_kelvin(float c) {
     float k = c + 273.15;
-    printf("Kelvin: ",k,c);
+    printf("%.2f °C = %.2f K\n",k,c);
 }
 
 void fahrenheit_to_celsius(float f) {
     float c = (f - 32) * 5.0 / 9.0;
-    printf("Celsius:", f,c);
+    printf("%.2f °F = %.2f °C\n", f,c);
 }
 
 void kelvin_to_celsius(float k) {
@@ -65,5 +65,5 @@ void kelvin_to_celsius(float k) {
         return;
     }
     float c = k - 273.15;
-    printf("k,c");
+    printf("%.2f K = %.2f °C\n",k,c);
 }
